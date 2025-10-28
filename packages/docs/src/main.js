@@ -1,5 +1,6 @@
 // Packages
 import Vue from 'vue'
+import { h } from 'vue'
 import Vuetify from 'vuetify/lib/framework'
 import InstantSearch from 'vue-instantsearch'
 
@@ -52,7 +53,7 @@ export async function createApp ({
     store,
     i18n,
     vuetify,
-    render: h => h(App),
+    render: () => h(App),
   })
 
   // expose the app, the router and the store.
